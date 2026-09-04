@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="RecordData" format=3 uid="uid://nltcyty12552"]
+
+[ext_resource type="Script" uid="uid://cm76kiwxp8fj2" path="res://data/resources/record_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://dyduxakahvns6" path="res://data/resources/record_field.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cjhyhipd1f23t" path="res://assets/sprites/characters/profile/john.png" id="3"]
+
+[sub_resource type="Resource" id="Field_1"]
+script = ExtResource("2")
+label = "Name:"
+value = "John Blake"
+
+[sub_resource type="Resource" id="Field_2"]
+script = ExtResource("2")
+label = "Age:"
+value = "36"
+
+[sub_resource type="Resource" id="Field_3"]
+script = ExtResource("2")
+label = "Date of Birth:"
+value = "12/12/1989"
+
+[sub_resource type="Resource" id="Field_4"]
+script = ExtResource("2")
+label = "Gender:"
+value = "Male"
+
+[sub_resource type="Resource" id="Field_5"]
+script = ExtResource("2")
+label = "Occupation:"
+value = "Chef"
+
+[resource]
+script = ExtResource("1")
+id = "suspect3_record"
+title = "Suspect File 3"
+record_type = 1
+photo = ExtResource("3")
+fields = Array[ExtResource("2")]([SubResource("Field_1"), SubResource("Field_2"), SubResource("Field_3"), SubResource("Field_4"), SubResource("Field_5")])
+report_body = "Octavio's chef. 
+
+Spent the day organizing the kitchen and preparing meals. Plated the dinner and selected the wine. 
+
+John claims to have sent the bottle unopened. According to his statment, he had no contact with Mr. Octavio during the day, as the victim did not leave his office until dinnertime. 
+
+A neghbor passing by the premises reported seeing him ranting angrily while returning from a long break after preparing lunch. 
+
+Was aware of the victim's dietary restrictions."

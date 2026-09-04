@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="RecordData" format=3 uid="uid://crfjvg3mcmr2h"]
+
+[ext_resource type="Script" uid="uid://cm76kiwxp8fj2" path="res://data/resources/record_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://dyduxakahvns6" path="res://data/resources/record_field.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b32vuydqcvnyf" path="res://assets/sprites/characters/profile/peter.png" id="3"]
+
+[sub_resource type="Resource" id="Field_1"]
+script = ExtResource("2")
+label = "Name:"
+value = "Peter Lowe"
+
+[sub_resource type="Resource" id="Field_2"]
+script = ExtResource("2")
+label = "Age:"
+value = "25"
+
+[sub_resource type="Resource" id="Field_3"]
+script = ExtResource("2")
+label = "Date of Birth:"
+value = "04/03/2001"
+
+[sub_resource type="Resource" id="Field_4"]
+script = ExtResource("2")
+label = "Gender:"
+value = "Male"
+
+[sub_resource type="Resource" id="Field_5"]
+script = ExtResource("2")
+label = "Occupation:"
+value = "Legal Administrator"
+
+[resource]
+script = ExtResource("1")
+id = "suspect1_record"
+title = "Suspect File 1"
+record_type = 1
+photo = ExtResource("3")
+fields = Array[ExtResource("2")]([SubResource("Field_1"), SubResource("Field_2"), SubResource("Field_3"), SubResource("Field_4"), SubResource("Field_5")])
+report_body = "Octavio's son. Arrived at the premises in the late afternoon and proceeded directly to the wine cellar stated he was there to celebrate the closing of a deal with his father.
+
+Exterior camera footage captured his arrival while he was speaking on the phone. 
+
+The following statement was identified: \"I'm going to sort this out soon, I hope I don't regret it!\".
+
+Peter has no history of food allergies."

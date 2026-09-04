@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="RecordData" format=3 uid="uid://ctgmtgg5jtaq8"]
+
+[ext_resource type="Script" uid="uid://cm76kiwxp8fj2" path="res://data/resources/record_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://dyduxakahvns6" path="res://data/resources/record_field.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bpplrelhrpapp" path="res://assets/sprites/characters/profile/octavio.png" id="3"]
+
+[sub_resource type="Resource" id="Field_1"]
+script = ExtResource("2")
+label = "Name:"
+value = "Octavio Lowe"
+
+[sub_resource type="Resource" id="Field_2"]
+script = ExtResource("2")
+label = "Gender:"
+value = "Male"
+
+[sub_resource type="Resource" id="Field_3"]
+script = ExtResource("2")
+label = "Age:"
+value = "58"
+
+[sub_resource type="Resource" id="Field_4"]
+script = ExtResource("2")
+label = "Date of Birth:"
+value = "08/25/1968"
+
+[sub_resource type="Resource" id="Field_5"]
+script = ExtResource("2")
+label = "Cause of Death:"
+value = "Anaphylactic Shock"
+
+[sub_resource type="Resource" id="Field_6"]
+script = ExtResource("2")
+label = "Time of Death:"
+value = "7:32 PM"
+
+[resource]
+script = ExtResource("1")
+id = "victim_record"
+title = "Victim Record"
+photo = ExtResource("3")
+fields = Array[ExtResource("2")]([SubResource("Field_1"), SubResource("Field_2"), SubResource("Field_3"), SubResource("Field_4"), SubResource("Field_5"), SubResource("Field_6")])
+report_body = "Notes: 
+
+The patient had a severe allergy to nuts. According to reports, he was extremely methodical and careful with his diet. No history of dietary negligence in recent years."

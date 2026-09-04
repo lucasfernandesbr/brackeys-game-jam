@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="RecordData" format=3 uid="uid://vd21a2noawif"]
+
+[ext_resource type="Script" uid="uid://cm76kiwxp8fj2" path="res://data/resources/record_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://dyduxakahvns6" path="res://data/resources/record_field.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://c0vmyvmiwuia2" path="res://assets/sprites/characters/profile/helena.png" id="3"]
+
+[sub_resource type="Resource" id="Field_1"]
+script = ExtResource("2")
+label = "Name:"
+value = "Helena White"
+
+[sub_resource type="Resource" id="Field_2"]
+script = ExtResource("2")
+label = "Age:"
+value = "42"
+
+[sub_resource type="Resource" id="Field_3"]
+script = ExtResource("2")
+label = "Date of Birth:"
+value = "06/30/1983"
+
+[sub_resource type="Resource" id="Field_4"]
+script = ExtResource("2")
+label = "Gender:"
+value = "Female"
+
+[sub_resource type="Resource" id="Field_5"]
+script = ExtResource("2")
+label = "Occupation:"
+value = "Housekeeper"
+
+[resource]
+script = ExtResource("1")
+id = "suspect2_record"
+title = "Suspect File 2"
+record_type = 1
+photo = ExtResource("3")
+fields = Array[ExtResource("2")]([SubResource("Field_1"), SubResource("Field_2"), SubResource("Field_3"), SubResource("Field_4"), SubResource("Field_5")])
+report_body = "Octavio's housekeeper.
+
+Exterior camera footage confirms she received the weekly groceries in the morning, cleaned the master suite alone during the afternoon, and in the evening headed to the kitchen to serve dinner to the father and son in the wine cellar.
+
+After serving them, she proceeded to take out the trash for collection."

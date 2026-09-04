@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="RecordData" format=3 uid="uid://h4qwywptxvmg"]
+
+[ext_resource type="Script" uid="uid://cm76kiwxp8fj2" path="res://data/resources/record_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://dyduxakahvns6" path="res://data/resources/record_field.gd" id="1_vph2v"]
+
+[resource]
+script = ExtResource("1")
+id = "written_report"
+title = "Preliminary Case Information"
+record_type = 1
+report_body = "Only 4 people were on the premises on the day of the incident:
+
+Octavio (victim), your son Peter, Helena (housekeeper) an John (cook).
+
+The victim spent the day in his office holding meetings to finalize a major deal for his company (a partnership between him and his son). This information was corroborated by analysis of his computer and meeting logs.
+
+After leaving the office, he took a shower and went to the wine cellar to meet his son for a dinner where they would discuss the specifics of the agreement.
+
+According to his son's statement, Helena, the housekeeper, arrived carrying a food tray and an open bottle of wine with 2 glasses. Peter poured the wine, tasted it, and handed the other glass to his father, who went into shock upon taking the first sip. His auto-injectors were not found in his room.
+
+Death occurred 10 minutes later, while emergency responders were en route to the scene."

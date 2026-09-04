@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="CaseData" format=3 uid="uid://b01v3te7s6wyr"]
+
+[ext_resource type="Script" uid="uid://di1u2hqy4t2yh" path="res://data/resources/case_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://b4xoi1amt41t7" path="res://data/resources/evidence_data.gd" id="2"]
+[ext_resource type="Resource" uid="uid://ctgmtgg5jtaq8" path="res://data/records/record_stub.tres" id="3"]
+[ext_resource type="Resource" uid="uid://crfjvg3mcmr2h" path="res://data/records/record_suspect1.tres" id="4"]
+[ext_resource type="Resource" uid="uid://vd21a2noawif" path="res://data/records/record_suspect2.tres" id="5"]
+[ext_resource type="Resource" uid="uid://nltcyty12552" path="res://data/records/record_suspect3.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://dtleoq47wa8of" path="res://assets/sprites/characters/evidence/octavio.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cya4w5movnl0m" path="res://assets/sprites/characters/evidence/helena.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://fgfyi114ty5a" path="res://assets/sprites/characters/evidence/john.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://ukmjqaoyv07x" path="res://assets/sprites/characters/evidence/Peter.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://djnle64dqfe56" path="res://assets/sprites/desktop/evidence/corkscrew.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bh1f740vs41uf" path="res://assets/sprites/desktop/evidence/almond_oil_bottle.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://b76qy6avevys1" path="res://assets/sprites/desktop/evidence/unknown_card.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://8hnn5nfbuv2g" path="res://assets/sprites/desktop/evidence/wine_glass.png" id="14"]
+
+[sub_resource type="Resource" id="SubResource_helena_photo"]
+script = ExtResource("2")
+id = "helena_photo"
+title = "Helena White"
+description = "Portrait of Helena White."
+miniature = ExtResource("8")
+photo = ExtResource("8")
+
+[sub_resource type="Resource" id="SubResource_john_photo"]
+script = ExtResource("2")
+id = "john_photo"
+title = "John Blake"
+description = "Portrait of John Blake."
+miniature = ExtResource("9")
+photo = ExtResource("9")
+
+[sub_resource type="Resource" id="SubResource_octavio_photo"]
+script = ExtResource("2")
+id = "octavio_photo"
+title = "Octavio Lowe"
+description = "Portrait of Octavio Lowe, the victim."
+miniature = ExtResource("7")
+photo = ExtResource("7")
+
+[sub_resource type="Resource" id="SubResource_peter_photo"]
+script = ExtResource("2")
+id = "peter_photo"
+title = "Peter Lowe"
+description = "Portrait of Peter Lowe."
+miniature = ExtResource("10")
+photo = ExtResource("10")
+
+[sub_resource type="Resource" id="SubResource_suspect1_record"]
+script = ExtResource("2")
+id = "suspect1_record"
+title = "Peter's File"
+description = "Peter Lowe's file."
+category = "document"
+record = ExtResource("4")
+
+[sub_resource type="Resource" id="SubResource_suspect2_record"]
+script = ExtResource("2")
+id = "suspect2_record"
+title = "Helena's File"
+description = "Helena White's file."
+category = "document"
+record = ExtResource("5")
+
+[sub_resource type="Resource" id="SubResource_suspect3_record"]
+script = ExtResource("2")
+id = "suspect3_record"
+title = "John's File"
+description = "John Blake's file."
+category = "document"
+record = ExtResource("6")
+
+[sub_resource type="Resource" id="SubResource_victim_record"]
+script = ExtResource("2")
+id = "victim_record"
+title = "Victim's File"
+description = "Forensic file of Octavio Lowe."
+category = "document"
+record = ExtResource("3")
+
+[sub_resource type="Resource" id="SubResource_corkscrew"]
+script = ExtResource("2")
+id = "corkscrew"
+title = "Corkscrew"
+description = "A corkscrew found at the scene."
+miniature = ExtResource("11")
+photo = ExtResource("11")
+
+[sub_resource type="Resource" id="SubResource_almond_oil"]
+script = ExtResource("2")
+id = "almond_oil"
+title = "Almond Oil"
+description = "A bottle of almond oil."
+miniature = ExtResource("12")
+photo = ExtResource("12")
+
+[sub_resource type="Resource" id="SubResource_unknown_card"]
+script = ExtResource("2")
+id = "unknown_card"
+title = "Unknown Card"
+description = "An unidentified card."
+miniature = ExtResource("13")
+photo = ExtResource("13")
+
+[sub_resource type="Resource" id="SubResource_wine_glass"]
+script = ExtResource("2")
+id = "wine_glass"
+title = "Wine Glass"
+description = "The victim's wine glass."
+miniature = ExtResource("14")
+photo = ExtResource("14")
+
+[resource]
+script = ExtResource("1")
+title = "The Butler's Case"
+evidences = Array[ExtResource("2")]([SubResource("SubResource_helena_photo"), SubResource("SubResource_john_photo"), SubResource("SubResource_octavio_photo"), SubResource("SubResource_peter_photo"), SubResource("SubResource_suspect1_record"), SubResource("SubResource_suspect2_record"), SubResource("SubResource_suspect3_record"), SubResource("SubResource_victim_record"), SubResource("SubResource_corkscrew"), SubResource("SubResource_almond_oil"), SubResource("SubResource_unknown_card"), SubResource("SubResource_wine_glass")])
+witness_reports = Array[String](["The butler was seen leaving at 10 PM.", "The window was open when we arrived."])
+correct_evidence_ids = Array[String](["helena_photo", "corkscrew", "almond_oil", "suspect2_record"])
