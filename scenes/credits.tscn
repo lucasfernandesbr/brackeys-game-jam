@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://byxkp4e4oy3qf"]
+
+[ext_resource type="Script" uid="uid://dp4dto56aegxs" path="res://scenes/credits.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2_2ckv8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnb36"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mvl7x"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_detail = 1
+
+[node name="Credits" type="Control" unique_id=524247354]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1236482718]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1362022717]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 87.0
+offset_right = 920.0
+offset_bottom = 144.0
+theme_override_fonts/font = ExtResource("2_2ckv8")
+theme_override_font_sizes/font_size = 80
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="Development" type="Label" parent="." unique_id=1197954134]
+layout_mode = 0
+offset_left = 235.0
+offset_top = 240.0
+offset_right = 460.0
+offset_bottom = 299.0
+text = "Development
+Lucas \"Ludo\" Souza"
+horizontal_alignment = 1
+
+[node name="DesignArt" type="Label" parent="." unique_id=1472745526]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 227.0
+offset_right = 752.0
+offset_bottom = 317.0
+text = "Design/Art
+Lucas \"Ludo\" Souza
+Bruno Figueiredo"
+horizontal_alignment = 1
+
+[node name="Writers" type="Label" parent="." unique_id=1781735461]
+layout_mode = 0
+offset_left = 820.0
+offset_top = 227.0
+offset_right = 1073.0
+offset_bottom = 317.0
+text = "Writers
+Marcos \"Arkade\" Ribeiro
+ Bruno Figueiredo"
+horizontal_alignment = 1
+
+[node name="Music" type="Label" parent="." unique_id=745119476]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 389.0
+offset_right = 545.0
+offset_bottom = 448.0
+text = "Music
+Isac Douglas"
+horizontal_alignment = 1
+
+[node name="Translations" type="Label" parent="." unique_id=565631697]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 390.0
+offset_right = 863.0
+offset_bottom = 449.0
+text = "Translations
+Herick Cartman"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=505346530]
+custom_minimum_size = Vector2(200, 44)
+layout_mode = 0
+offset_left = 360.0
+offset_top = 538.0
+offset_right = 920.0
+offset_bottom = 582.0
+theme_override_colors/font_hover_pressed_color = Color(0.5529556, 0.55295557, 0.55295557, 1)
+theme_override_fonts/font = ExtResource("2_2ckv8")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_pnb36")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mvl7x")
+text = "BACK"
