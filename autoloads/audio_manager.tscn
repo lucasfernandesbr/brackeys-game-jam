@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b58oge55ppekd"]
+
+[ext_resource type="Script" uid="uid://bls285kxvd8td" path="res://autoloads/audio_manager.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://ckven1oi8rkht" path="res://assets/audio/ingame-loop.wav" id="2_alnp1"]
+[ext_resource type="AudioStream" uid="uid://48ditdopg3nr" path="res://assets/audio/sfx/click.mp3" id="3_click"]
+
+[node name="AudioManager" type="Node" unique_id=2076178214]
+script = ExtResource("1")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1693826263]
+stream = ExtResource("2_alnp1")
+autoplay = true
+bus = &"Music"
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="." unique_id=747617605]
+stream = ExtResource("3_click")
