@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://lmusupg4sqg4"]
+
+[ext_resource type="Script" uid="uid://bu3roglrandrj" path="res://scenes/intro.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2"]
+
+[node name="Intro" type="Control" unique_id=1928966161]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1879165518]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="TitleCard" type="Control" parent="." unique_id=1035880795]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="TitleCard" unique_id=1383895023]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="TitleCard" unique_id=2057914391]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 48
+text = "August 30th, 10:00 PM.
+The phone rings..."
+horizontal_alignment = 1
+vertical_alignment = 1
