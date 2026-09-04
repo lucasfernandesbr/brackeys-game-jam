@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://b2f2vmp2rdu76"]
+
+[ext_resource type="Script" uid="uid://bqhx204lkmlrs" path="res://scenes/main_scene.gd" id="1"]
+[ext_resource type="PackedScene" path="res://components/hotspot.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://d1p8hby6p2s27" path="res://assets/sprites/home/background.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bvu4yxgnwuomb" path="res://assets/sprites/home/desktop.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://sdtrb38gjkf1" path="res://assets/sprites/home/dekstop-hover.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://blgpavoqhavq1" path="res://assets/sprites/home/board.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://8nt2q0vwrcyw" path="res://assets/sprites/home/board-hover.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c6q1ichnp2t65" path="res://assets/sprites/home/phone.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://2g8mfg2aw8if" path="res://assets/sprites/home/phone-hover.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dm88j236blwjd" path="res://assets/sprites/board/photo_miniature.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cu32w7v7ichvv" path="res://assets/sprites/characters/evidence/peter-miniature.png" id="10_mngbo"]
+[ext_resource type="Texture2D" uid="uid://begjuujkmrd1f" path="res://assets/sprites/record_miniature.png" id="12_4w45t"]
+[ext_resource type="Texture2D" uid="uid://d0mor7ql1wfh5" path="res://assets/sprites/desktop/email/email_new_icon.png" id="13_4w45t"]
+[ext_resource type="AudioStream" uid="uid://bve63ph05jiq" path="res://assets/audio/phone-ring.mp3" id="14_phone"]
+[ext_resource type="Texture2D" uid="uid://mp8vqqi4121e" path="res://assets/sprites/home/exit_icon.png" id="15_01n6w"]
+[ext_resource type="Texture2D" uid="uid://dqu1fr62k5qrf" path="res://assets/sprites/home/exit_icon_hover.png" id="16_6u1mn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wevv"]
+atlas = ExtResource("4")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1cbu"]
+atlas = ExtResource("10_mngbo")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_photomini"]
+atlas = ExtResource("10")
+region = Rect2(97, 37, 40, 40)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mngbo"]
+atlas = ExtResource("12_4w45t")
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xrah"]
+atlas = ExtResource("15_01n6w")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e76eb"]
+atlas = ExtResource("16_6u1mn")
+
+[node name="MainScene" type="Control" unique_id=2089765238]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="." unique_id=802132023]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HotspotBoard" parent="." unique_id=326268685 instance=ExtResource("2")]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -771.39996
+offset_bottom = 406.0
+grow_horizontal = 0
+texture_normal = ExtResource("6")
+ignore_texture_size = false
+stretch_mode = 0
+target_scene_key = "board"
+normal_texture = ExtResource("6")
+hover_overlay_path = NodePath("../HoverBoard")
+
+[node name="HoverBoard" type="TextureRect" parent="." unique_id=444555666]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -782.8
+offset_bottom = 412.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 5
+
+[node name="HotspotDesktop" parent="." unique_id=965436115 instance=ExtResource("2")]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 90.0
+offset_top = -453.0
+offset_right = 678.0
+offset_bottom = -61.0
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_6wevv")
+ignore_texture_size = false
+stretch_mode = 0
+target_scene_key = "desktop"
+normal_texture = SubResource("AtlasTexture_6wevv")
+hover_overlay_path = NodePath("../HoverDesktop")
+
+[node name="HoverDesktop" type="TextureRect" parent="." unique_id=111222333]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 78.0
+offset_top = -465.0
+offset_right = 690.0
+offset_bottom = -48.0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("5")
+
+[node name="HotspotPhone" parent="." unique_id=789012345 instance=ExtResource("2")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -427.0
+offset_top = -210.0
+offset_right = -115.0
+offset_bottom = -78.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8")
+normal_texture = ExtResource("8")
+hover_overlay_path = NodePath("../HoverPhone")
+
+[node name="HoverPhone" type="TextureRect" parent="." unique_id=777888999]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -439.0
+offset_top = -222.0
+offset_right = -104.0
+offset_bottom = -66.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("9")
+
+[node name="BoardDocuments" type="Control" parent="." unique_id=101010101]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -771.39996
+offset_bottom = 406.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="PhotoSlot1" type="TextureRect" parent="BoardDocuments" unique_id=101010104]
+layout_mode = 0
+offset_left = 115.39996
+offset_top = 49.0
+offset_right = 170.39996
+offset_bottom = 104.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_e1cbu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PhotoSlot2" type="TextureRect" parent="BoardDocuments" unique_id=101010105]
+layout_mode = 0
+offset_left = 255.39996
+offset_top = 223.0
+offset_right = 310.39996
+offset_bottom = 278.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_photomini")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DocumentSlot1" type="TextureRect" parent="BoardDocuments" unique_id=101010102]
+layout_mode = 0
+offset_left = 386.39996
+offset_top = 28.0
+offset_right = 441.39996
+offset_bottom = 102.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_mngbo")
+expand_mode = 1
+
+[node name="PhotoSlot3" type="TextureRect" parent="BoardDocuments" unique_id=101010103]
+layout_mode = 0
+offset_left = 579.39996
+offset_top = 191.0
+offset_right = 634.39996
+offset_bottom = 265.0
+scale = Vector2(2, 2)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_photomini")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EmailNotification" type="Control" parent="." unique_id=608944853]
+layout_mode = 1
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="EvidenceWindowModalOverlay" type="ColorRect" parent="EmailNotification" unique_id=1538617878]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 122.0
+offset_top = 299.0
+offset_right = 646.0
+offset_bottom = 567.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.06666667, 0.06666667, 0.06666667, 0.627451)
+
+[node name="TextureRect" type="TextureRect" parent="EmailNotification" unique_id=553536695]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 305.0
+offset_right = 312.0
+offset_bottom = 345.0
+scale = Vector2(6, 6)
+mouse_filter = 2
+texture = ExtResource("13_4w45t")
+stretch_mode = 5
+
+[node name="PhoneRingPlayer" type="AudioStreamPlayer" parent="." unique_id=131400001]
+stream = ExtResource("14_phone")
+
+[node name="BackMenuButton" type="TextureButton" parent="." unique_id=1758008955]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 35.0
+offset_right = 165.0
+offset_bottom = 138.0
+scale = Vector2(1.4, 1.4)
+texture_normal = SubResource("AtlasTexture_7xrah")
+texture_hover = SubResource("AtlasTexture_e76eb")
+stretch_mode = 5
