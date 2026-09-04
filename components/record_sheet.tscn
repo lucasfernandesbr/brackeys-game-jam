@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://jsd7uri3j5wo"]
+
+[ext_resource type="Script" uid="uid://iwj8lorsawr1" path="res://components/record_sheet.gd" id="1"]
+[ext_resource type="Resource" uid="uid://nltcyty12552" path="res://data/records/record_suspect3.tres" id="2_lyovl"]
+[ext_resource type="Texture2D" uid="uid://rk13dxsb46ib" path="res://assets/sprites/record.png" id="2_u2qig"]
+[ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="3"]
+[ext_resource type="Texture2D" uid="uid://cjhyhipd1f23t" path="res://assets/sprites/characters/profile/john.png" id="5_h81e5"]
+
+[node name="RecordSheet" type="Control" unique_id=780081813]
+custom_minimum_size = Vector2(384, 512)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+preview_data = ExtResource("2_lyovl")
+
+[node name="Background" type="TextureRect" parent="." unique_id=561163804]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_u2qig")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1785155762]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1161561092]
+clip_contents = true
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=57516604]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 24
+text = "Suspect File 3"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Header" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=321609665]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.58
+theme_override_constants/separation = 32
+
+[node name="Photo" type="TextureRect" parent="MarginContainer/VBoxContainer/Header" unique_id=1868832518]
+custom_minimum_size = Vector2(96, 0)
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.72
+offset_transform_enabled = true
+texture = ExtResource("5_h81e5")
+stretch_mode = 4
+
+[node name="FieldsContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Header" unique_id=717495849]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="ReportBody" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1713551959]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 16
+text = "Octavio's chef. 
+
+Spent the day organizing the kitchen and preparing meals. Plated the dinner and selected the wine. 
+
+John claims to have sent the bottle unopened. According to his statment, he had no contact with Mr. Otávio during the day, as the victim did not leave his office until dinnertime. 
+
+A neghbor passing by the premises reported seeing him ranting angrily while returning from a long break after preparing lunch. 
+
+Was aware of the victim's dietary restrictions."
+autowrap_mode = 3
+
+[node name="Footer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=291693508]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Stamp" type="TextureRect" parent="MarginContainer/VBoxContainer/Footer" unique_id=1353407723]
+visible = false
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 82.0
+stretch_mode = 5
+
+[node name="Signature" type="TextureRect" parent="MarginContainer/VBoxContainer/Footer" unique_id=1516058379]
+visible = false
+layout_mode = 0
+offset_left = 175.0
+offset_right = 271.0
+offset_bottom = 82.0
+stretch_mode = 5

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cpf51cl87urnp"]
+
+[ext_resource type="Texture2D" uid="uid://c6qttwa7doej4" path="res://assets/sprites/desktop/close_tab_icon.png" id="1_miale"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e76eb"]
+bg_color = Color(0.34117648, 0.34117648, 0.34117648, 1)
+
+[node name="CloseWindowTabButton" type="Button" unique_id=1901855699]
+anchors_preset = -1
+anchor_right = 0.053000003
+anchor_bottom = 0.05
+offset_right = 0.15999603
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_e76eb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1586492691]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 54.0
+offset_bottom = 32.0
+texture = ExtResource("1_miale")
+stretch_mode = 5

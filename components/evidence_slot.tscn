@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://60cjh4711xsv"]
+
+[ext_resource type="Script" uid="uid://4o6jpsgr8rxs" path="res://components/evidence_slot.gd" id="1"]
+
+[node name="EvidenceSlot" type="Control" unique_id=1834028793]
+custom_minimum_size = Vector2(160, 130)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+
+[node name="SlotTexture" type="TextureRect" parent="." unique_id=1335118582]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 3
+
+[node name="Pin" type="TextureRect" parent="." unique_id=-1826953717]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -3.5
+offset_top = -3.0
+offset_right = 3.5
+offset_bottom = 4.0
+grow_horizontal = 2
+mouse_filter = 2

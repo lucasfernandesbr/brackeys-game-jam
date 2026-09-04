@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://components/hotspot.gd" id="1"]
+
+[node name="Hotspot" type="TextureButton"]
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("1")
