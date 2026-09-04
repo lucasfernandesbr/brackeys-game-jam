@@ -1,0 +1,12 @@
+.claude/
+.tokensave/
+docs/
+
+# Godot editor cache
+.godot/
+
+# Build/export artifacts
+game-jam-test.*
+
+# Temp files
+*.tmp
