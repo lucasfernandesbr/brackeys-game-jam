@@ -226,7 +226,7 @@ func _update_print_button(ev: EvidenceData) -> void:
 func _on_print_pressed() -> void:
 	if _current_evidence == null:
 		return
-		
+
 	GameState.mark_printed(_current_evidence.id)
 	_update_print_button(_current_evidence)
 	_open_window(print_alert, false)
