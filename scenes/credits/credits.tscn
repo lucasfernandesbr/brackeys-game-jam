@@ -2,14 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dp4dto56aegxs" path="res://scenes/credits/credits.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2_2ckv8"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnb36"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-corner_detail = 1
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mvl7x"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-corner_detail = 1
+[ext_resource type="PackedScene" uid="uid://cmbtn0menubtn7" path="res://components/menu_button/menu_button.tscn" id="3_menubtn"]
 
 [node name="Credits" type="Control" unique_id=524247354]
 layout_mode = 3
@@ -87,16 +80,12 @@ text = "Translations
 Herick Cartman"
 horizontal_alignment = 1
 
-[node name="BackButton" type="Button" parent="." unique_id=505346530]
-custom_minimum_size = Vector2(200, 44)
+[node name="BackButton" parent="." instance=ExtResource("3_menubtn")]
 layout_mode = 0
 offset_left = 360.0
 offset_top = 538.0
 offset_right = 920.0
 offset_bottom = 582.0
 theme_override_colors/font_hover_pressed_color = Color(0.5529556, 0.55295557, 0.55295557, 1)
-theme_override_fonts/font = ExtResource("2_2ckv8")
 theme_override_font_sizes/font_size = 80
-theme_override_styles/normal = SubResource("StyleBoxFlat_pnb36")
-theme_override_styles/hover = SubResource("StyleBoxFlat_mvl7x")
 text = "BACK"
