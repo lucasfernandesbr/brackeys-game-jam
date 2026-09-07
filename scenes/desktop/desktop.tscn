@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4drq2kvsc03i"]
 
-[ext_resource type="Script" uid="uid://dgur6sbe80odu" path="res://scenes/desktop.gd" id="1"]
+[ext_resource type="Script" uid="uid://dgur6sbe80odu" path="res://scenes/desktop/desktop.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dyjeao2ncv6ji" path="res://assets/sprites/desktop/workspace.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://dv7ikimkcnckw" path="res://assets/sprites/desktop/folder/folder_icon.png" id="3_yhf0c"]
 [ext_resource type="Texture2D" uid="uid://b4q54hhutugdf" path="res://assets/sprites/desktop/folder/folder_icon_hover.png" id="4_vxgxr"]
@@ -15,12 +15,12 @@
 [ext_resource type="Texture2D" uid="uid://dto6wb8syh66k" path="res://assets/sprites/desktop/bin/bin_icon_hover.png" id="10_3erbe"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="14_iamu6"]
 [ext_resource type="Texture2D" uid="uid://dws0ihatsjnko" path="res://assets/sprites/desktop/email/police_mini_logo.png" id="15_3erbe"]
-[ext_resource type="PackedScene" uid="uid://cpf51cl87urnp" path="res://components/close_window_tab_button.tscn" id="16_0542q"]
+[ext_resource type="PackedScene" uid="uid://cpf51cl87urnp" path="res://components/close_window_tab_button/close_window_tab_button.tscn" id="16_0542q"]
 [ext_resource type="Texture2D" uid="uid://xmrjhmu28y2w" path="res://assets/sprites/desktop/email/download_icon.png" id="16_v4dq8"]
 [ext_resource type="Texture2D" uid="uid://cn8m3a14vepc1" path="res://assets/sprites/desktop/folder/alert_box.png" id="20_0542q"]
 [ext_resource type="Texture2D" uid="uid://cya4w5movnl0m" path="res://assets/sprites/characters/evidence/helena.png" id="21_photo"]
 [ext_resource type="Texture2D" uid="uid://b32vuydqcvnyf" path="res://assets/sprites/characters/profile/peter.png" id="22_docphoto"]
-[ext_resource type="PackedScene" uid="uid://b8kqf0lqkx7fm" path="res://components/folder_item.tscn" id="23_folderitem"]
+[ext_resource type="PackedScene" uid="uid://b8kqf0lqkx7fm" path="res://components/folder_item/folder_item.tscn" id="23_folderitem"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e76eb"]
 atlas = ExtResource("5_6r5gw")

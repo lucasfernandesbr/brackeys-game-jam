@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2f2vmp2rdu76"]
 
-[ext_resource type="Script" uid="uid://bqhx204lkmlrs" path="res://scenes/main_scene.gd" id="1"]
-[ext_resource type="PackedScene" path="res://components/hotspot.tscn" id="2"]
+[ext_resource type="Script" uid="uid://bqhx204lkmlrs" path="res://scenes/main_scene/main_scene.gd" id="1"]
+[ext_resource type="PackedScene" path="res://components/hotspot/hotspot.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://d1p8hby6p2s27" path="res://assets/sprites/home/background.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://bvu4yxgnwuomb" path="res://assets/sprites/home/desktop.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://sdtrb38gjkf1" path="res://assets/sprites/home/dekstop-hover.png" id="5"]

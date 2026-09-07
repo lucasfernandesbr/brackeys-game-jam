@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://byxkp4e4oy3qf"]
 
-[ext_resource type="Script" uid="uid://dp4dto56aegxs" path="res://scenes/credits.gd" id="1"]
+[ext_resource type="Script" uid="uid://dp4dto56aegxs" path="res://scenes/credits/credits.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2_2ckv8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnb36"]

@@ -1,7 +1,7 @@
 # gdlint:ignore-file:file-length - scene controller (arquivo grande e esperado)
 extends Control
 
-const FOLDER_ITEM_SCENE := preload("res://components/folder_item.tscn")
+const FOLDER_ITEM_SCENE := preload("res://components/folder_item/folder_item.tscn")
 const FILE_IMAGE_ICON := preload("res://assets/sprites/desktop/evidence/file_image_icon.png")
 const FILE_DOC_ICON := preload("res://assets/sprites/desktop/evidence/file_evidence_icon.png")
 const FILE_IMAGE_ICON_HOVER := preload(
@@ -226,7 +226,7 @@ func _update_print_button(ev: EvidenceData) -> void:
 func _on_print_pressed() -> void:
 	if _current_evidence == null:
 		return
-
+		
 	GameState.mark_printed(_current_evidence.id)
 	_update_print_button(_current_evidence)
 	_open_window(print_alert, false)

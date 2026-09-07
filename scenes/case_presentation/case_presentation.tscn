@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c8pq2n4v3m1kd"]
 
-[ext_resource type="Script" uid="uid://c0c0c1b2e45iy" path="res://scenes/case_presentation.gd" id="1"]
+[ext_resource type="Script" uid="uid://c0c0c1b2e45iy" path="res://scenes/case_presentation/case_presentation.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2"]
 [ext_resource type="Texture2D" uid="uid://c3vp0buutvh0s" path="res://assets/sprites/desktop/play_icon.png" id="3_1vee6"]
 

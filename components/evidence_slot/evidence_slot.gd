@@ -27,7 +27,7 @@ const MAGNET_BRIGHTNESS_BOOST := 0.3
 @onready var slot_texture: TextureRect = $SlotTexture
 @onready var pin_node: TextureRect = $Pin
 
-const RECORD_SHEET_SCENE := preload("res://components/record_sheet.tscn")
+const RECORD_SHEET_SCENE := preload("res://components/record_sheet/record_sheet.tscn")
 const RECORD_SHEET_SIZE := Vector2(384, 512)
 
 var _occupied: bool = false

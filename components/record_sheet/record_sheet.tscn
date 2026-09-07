@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://jsd7uri3j5wo"]
 
-[ext_resource type="Script" uid="uid://iwj8lorsawr1" path="res://components/record_sheet.gd" id="1"]
+[ext_resource type="Script" uid="uid://iwj8lorsawr1" path="res://components/record_sheet/record_sheet.gd" id="1"]
 [ext_resource type="Resource" uid="uid://nltcyty12552" path="res://data/records/record_suspect3.tres" id="2_lyovl"]
 [ext_resource type="Texture2D" uid="uid://rk13dxsb46ib" path="res://assets/sprites/record.png" id="2_u2qig"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="3"]

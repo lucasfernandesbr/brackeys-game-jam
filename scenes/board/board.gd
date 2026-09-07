@@ -2,7 +2,7 @@
 @tool
 extends Control
 
-const EVIDENCE_SCENE := "res://components/draggable_evidence.tscn"
+const EVIDENCE_SCENE := "res://components/draggable_evidence/draggable_evidence.tscn"
 const PLACEHOLDER_PHOTO_SHEET := preload("res://assets/sprites/board/photo_miniature.png")
 const PLACEHOLDER_DOC_SHEET := preload("res://assets/sprites/record_miniature.png")
 

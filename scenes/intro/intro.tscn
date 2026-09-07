@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lmusupg4sqg4"]
 
-[ext_resource type="Script" uid="uid://bu3roglrandrj" path="res://scenes/intro.gd" id="1"]
+[ext_resource type="Script" uid="uid://bu3roglrandrj" path="res://scenes/intro/intro.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/fonts/TinyUnicode.ttf" id="2"]
 
 [node name="Intro" type="Control" unique_id=1928966161]

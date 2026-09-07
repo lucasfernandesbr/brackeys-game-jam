@@ -1,14 +1,14 @@
 extends CanvasLayer
 
 const SCENES: Dictionary = {
-	"main_menu": "res://scenes/main_menu.tscn",
-	"settings": "res://scenes/settings.tscn",
-	"credits": "res://scenes/credits.tscn",
-	"intro": "res://scenes/intro.tscn",
-	"case_presentation": "res://scenes/case_presentation.tscn",
-	"main": "res://scenes/main_scene.tscn",
-	"desktop": "res://scenes/desktop.tscn",
-	"board": "res://scenes/board.tscn",
+	"main_menu": "res://scenes/main_menu/main_menu.tscn",
+	"settings": "res://scenes/settings/settings.tscn",
+	"credits": "res://scenes/credits/credits.tscn",
+	"intro": "res://scenes/intro/intro.tscn",
+	"case_presentation": "res://scenes/case_presentation/case_presentation.tscn",
+	"main": "res://scenes/main_scene/main_scene.tscn",
+	"desktop": "res://scenes/desktop/desktop.tscn",
+	"board": "res://scenes/board/board.tscn",
 }
 
 const FADE_DURATION := 0.3

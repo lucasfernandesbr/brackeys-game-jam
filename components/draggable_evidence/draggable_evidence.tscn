@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="Script" path="res://components/draggable_evidence.gd" id="1"]
+[ext_resource type="Script" path="res://components/draggable_evidence/draggable_evidence.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://vv46hktfssfl" path="res://assets/ui/fonts/TinyUnicode.ttf" id="2"]
 
 [node name="DraggableEvidence" type="Control"]
