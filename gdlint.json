@@ -1,0 +1,8 @@
+{
+	"limits": {
+		"file_lines_soft": 400,
+		"file_lines_hard": 600,
+		"function_lines": 50,
+		"function_lines_critical": 90
+	}
+}

@@ -5,9 +5,11 @@ extends PanelContainer
 @onready var body_label: Label = $VBox/BodyLabel
 @onready var close_btn: Button = $VBox/CloseButton
 
+
 func _ready() -> void:
 	close_btn.pressed.connect(hide)
 	hide()
+
 
 func show_document(doc_title: String, doc_body: String) -> void:
 	title_label.text = doc_title

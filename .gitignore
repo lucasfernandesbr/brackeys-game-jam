@@ -1,6 +1,7 @@
 .claude/
 .tokensave/
 docs/
+tools/
 
 # Godot editor cache
 .godot/

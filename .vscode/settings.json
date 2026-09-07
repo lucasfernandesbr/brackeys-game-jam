@@ -1,3 +1,12 @@
 {
-    "godotTools.editorPath.godot4": "c:\\Users\\Lucas Fernandes\\Downloads\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64_console.exe"
+    "godotTools.editorPath.godot4": "c:\\Users\\Lucas Fernandes\\Downloads\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64_console.exe",
+    "runOnSave.commands": [
+        {
+            "match": ".*\\.gd$",
+            "command": "python \"${workspaceFolder}/tools/gdfmt.py\" \"${file}\"",
+            "runIn": "backend",
+            "runningStatusMessage": "gdfmt ${fileBasename}",
+            "finishStatusMessage": "gdfmt ${fileBasename} ok"
+        }
+    ]
 }
