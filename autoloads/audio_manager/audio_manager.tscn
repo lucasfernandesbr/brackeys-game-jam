@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b58oge55ppekd"]
 
-[ext_resource type="Script" uid="uid://bls285kxvd8td" path="res://autoloads/audio_manager.gd" id="1"]
+[ext_resource type="Script" uid="uid://bls285kxvd8td" path="res://autoloads/audio_manager/audio_manager.gd" id="1"]
 [ext_resource type="AudioStream" uid="uid://ckven1oi8rkht" path="res://assets/audio/ingame-loop.wav" id="2_alnp1"]
 [ext_resource type="AudioStream" uid="uid://48ditdopg3nr" path="res://assets/audio/sfx/click.mp3" id="3_click"]
 
